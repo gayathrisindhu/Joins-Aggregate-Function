@@ -1,1 +1,13 @@
+left outer join 
+
+select e.ename,e.sal,d.age,d.deptname from emp e left join dept d on  e.eno = d.deptno;
+
+right outer join
+
+select e.ename,e.sal,d.age,d.deptname from emp e right join dept d on  e.eno = d.deptno;
+
+full join
+
+select e.ename,e.sal,d.age,d.deptname from emp e full join dept d on  e.eno = d.deptno;
+
 
