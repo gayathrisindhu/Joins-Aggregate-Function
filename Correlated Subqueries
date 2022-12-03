@@ -1,1 +1,4 @@
 
+SELECT employee_number, name FROM employees emp WHERE salary < ( SELECT AVG(salary) FROM employees WHERE department = emp.department);
+
+SELECT employee_number, name, (SELECT AVG(salary) FROM employees WHERE department = emp.department) AS department_average FROM employees emp;
